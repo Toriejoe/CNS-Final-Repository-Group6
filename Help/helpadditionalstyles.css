@@ -1,0 +1,65 @@
+.deleteaccount {
+    position: absolute;
+    bottom: 20%;
+}
+    
+
+
+.search-box {
+width: 90%;
+    
+}
+
+.form-control {
+
+width: 80%!important;
+margin: auto;
+font-size: 1.5rem!important;
+    
+}
+
+.row {
+margin-right: 0px!important;
+margin-left: 0px!important;
+}
+
+.login {
+font-size: 3.5vh;
+}
+
+a {
+text-decoration: none!important;
+}
+
+input {
+background-color: transparent;
+border: 0;
+}
+
+.contacttext {
+    line-height: 20px;
+    font-size: 48px;
+}
+
+.contacttext2 {
+    line-height: 20px;
+    font-size: 48px;
+}
+
+@media screen and (max-width: 600px) {
+.contacttext {
+    line-height: 10px;
+    //font-size: 32px;
+font-size: inherit;
+}
+
+.contacttext2 {
+    line-height: 20px;
+    font-size: inherit;
+}
+    
+.improved{
+    background-color: #40b5f5!important;
+    border-radius: 50px;
+}
+    

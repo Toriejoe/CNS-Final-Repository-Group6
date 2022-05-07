@@ -1,0 +1,215 @@
+body {
+  font-family:monospace;
+  background-color: white !important; 
+    text-align: center;
+padding-bottom: 50vh;
+}
+
+div.navbar{
+z-index: 1;
+}
+p {
+  color: #b3b3b3;
+  font-weight: 300!important;
+    text-align: center !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6, p {
+  font-family:monospace;
+    text-align: center !important;
+    color: black;
+    
+}
+
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+  a, a:hover {
+    text-decoration: none !important; }
+
+.content {
+  padding: 7rem 0; }
+
+h2 {
+  font-size: 20px;
+    text-align: center;
+}
+
+.form-control:active, .form-control:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+#calendar {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+  #calendar .fc-view-container {
+    padding: 30px;
+    background-color: lightgray!important;
+    -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2); 
+      //z-index: -1; 
+}
+.cancelbtn, .deletebtn {
+  //float: left!important;
+  width: 50%;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+  background-color: #ccc!important;
+  color: black!important;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+  background-color: #f44336!important;
+}
+
+/* Add padding and center-align text to the container */
+.container {
+  padding: 16px!important;
+  text-align: center!important;
+}
+
+/* The Modal (background) */
+.modal {
+ // display: none!important; /* Hidden by default */
+  position: fixed!important; /* Stay in place */
+  //z-index: 1!important; /* Sit on top */
+  left: 0!important;
+  top: 0!important;
+  width: 100%!important; /* Full width */
+  height: 100%!important; /* Full height */
+  overflow: auto!important; /* Enable scroll if needed */
+  background-color: white!important;
+  padding-top: 50px!important;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: white!important;
+  margin: 5% auto 15% auto!important; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid black!important;
+  //width: 100px!important; /* Could be more or less, depending on screen size */
+}
+
+.modal2 {
+ // display: none!important; /* Hidden by default */
+  position: fixed!important; /* Stay in place */
+  //z-index: 1!important; /* Sit on top */
+  left: 0!important;
+  top: 0!important;
+  width: 100%!important; /* Full width */
+  height: 100%!important; /* Full height */
+  overflow: auto!important; /* Enable scroll if needed */
+  background-color: white!important;
+  padding-top: 50px!important;
+}
+
+/* Modal Content/Box */
+.modal-content2 {
+  background-color: white!important;
+  margin: 5% auto 15% auto!important; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid black!important;
+  //width: 100px!important; /* Could be more or less, depending on screen size */
+}
+
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid black!important;
+  margin-bottom: 25px!important;
+}
+ 
+/* The Modal Close Button (x) */
+.close {
+  position: absolute!important;
+  right: 35px!important;
+  top: 15px!important;
+  font-size: 40px!important;
+  font-weight: bold!important;
+  color: black!important;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336!important;
+  cursor: pointer!important;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: ""!important;
+  clear: both!important;
+  display: table!important;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .deletebtn!important {
+     width: 100%!important;
+  }
+}
+.uploadbutton {
+   margin-top: 15px;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);}
+button {
+  background-color: #40b5f5;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+  position: 
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+
+/*
+.form-group{
+    border: 2px solid black!important; 
+    margin: auto;
+    padding: 0px; 
+    
+}
+.eventadder{
+    border: 2px solid black; 
+    color: black;
+    font-family: monospace;
+    height: 350px;
+    width: 400px;
+    margin: 300px;
+    margin-top: 0px;
+    padding: 0px;
+    justify-content: center!important;
+}
+.deletebtn {
+  background-color: #ccc;
+    font-family: monospace;
+}
+div.eventadder{
+    justify-content: center!important;
+}
+
+.form-control-sm {
+    height: calc(1.5em + 0.5rem + 2px);
+    padding: 0.25rem 0.5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+*/

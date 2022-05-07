@@ -1,0 +1,192 @@
+body {
+    background-color: white!important;
+    height: 100%;
+}
+
+a {
+width: 100%
+}
+.homephoto {
+    width: 45vh;
+    height: 80%;
+}
+
+.welcomephoto {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.welcomebox {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+}
+
+.scrollbar {
+    overflow-y: auto;
+}
+
+.welcometext {
+    color: black!important;
+}
+
+div.navbar img {
+    width: 50%;
+    height: 3vh;
+    margin-right: 50px;
+display: block;
+}
+
+
+div.navbar {
+
+    justify-content: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+flex-wrap: nowrap;
+max-height: 20vh;
+    background: #e3dee2;
+    margin: 0px;
+padding-left: 3.5vh;
+}
+
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.testsize {
+    height: 85%;
+    width: 85%;
+}
+
+.testfdborder {
+    border-style: solid;
+    border-width: 5px;
+    background-color: rgba(0, 255, 255, 0.226);
+}
+
+.Welcomeborder {
+    border-style: solid;
+    border-width: 5px;
+    background-color: rgba(134, 134, 134, 0.226);
+}
+
+.top {
+    position: absolute;
+    top: 0px;
+    height: 80%;
+}
+
+.bottom {
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    bottom: 0px;
+}
+
+.botto {
+    //position: absolute;
+    height: 20%;
+    width: 100%;
+}
+
+.signup {
+    color: #40b5f5!important;
+    font-size: 30px;
+}
+
+.form-control {
+    background-color: white;
+    border: 0 !important;
+    border-bottom: 5px solid black!important;
+    font-size: 2rem!important;
+    height: 100px;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black!important;
+}
+
+.btn-block {
+    padding: 90% 0;
+    /* define values in pixels / Percentage or em. whatever suits 
+       your requirements */
+/*    margin-bottom: -50px;*/
+}
+
+.login {
+    width: 90%;
+    font-size: 36px;
+}
+
+.rounded-pill {
+    border-radius: 50px;
+    
+}
+
+.top-buffer {
+    margin-top: 5%;
+}
+
+.contactinfo {
+    color: black;
+}
+
+.welcometext {
+    color: black;
+    font-size: 2vh;
+}
+
+.svgcolor {
+    filter: invert(43%) sepia(94%) saturate(1264%) hue-rotate(183deg) brightness(99%) contrast(95%);}
+
+.hovercolor:hover {
+    filter: invert(43%) sepia(94%) saturate(1264%) hue-rotate(183deg) brightness(99%) contrast(95%);
+}
+
+.contactborder {
+    border-style: hidden;
+    border-radius: 10px;
+    border-width: 5px;
+    background-color: rgba(110, 109, 109, 0.616);
+    padding: 30px;
+}
+
+.contacttext2 {
+    color: black;
+    text-align: center;
+    font-size: larger;
+display:flex;
+}
+
+.contacttext {
+    color: black;
+    text-align: left;
+    font-size: larger;
+}
+
+.PR {
+    color: black;
+    font-size: 1.5vh;
+}
+
+.errormsg {
+    color: red;
+}
+.improved{
+    background-color: #40b5f5!important;
+    border-radius: 50px;
+}
+
+.invis {
+visibility: hidden;
+}

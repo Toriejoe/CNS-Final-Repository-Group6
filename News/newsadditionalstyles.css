@@ -1,0 +1,333 @@
+/* Sticky note board effect from https://geeksretreat.wordpress.com/2013/09/04/css3-cork-board-with-sticky-notes/ */
+body { margin: 0; }
+
+.dummynote {
+    width: 40vh;
+    min-height: 40vh;
+    height: auto;
+    float: left;
+    margin: 8px;
+    overflow: hidden;
+}
+
+.header {
+    text-align: center;
+    font-family: monospace;
+    margin: auto;
+    color: black;
+    /*    border: 2px black double;*/
+    padding-top: 10px;
+    font-size: 40px;
+}
+
+
+.uploadbutton {
+    margin-top: 50px;
+    position: relative;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+button {
+  background-color: #40b5f5;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+input#Description {
+height: 20vh;
+width: 30vh;
+text-align: left;
+}
+
+.comment {
+        resize: none;
+        height: 40vh;
+        width: 40vh;
+      }
+
+div#frame { 	height: auto;
+margin: auto;
+width: auto;
+	padding-top: 35px;
+padding-left: 2vh;
+
+}
+
+img#deletetrash {
+    width: 5%;
+//filter: invert(25%) sepia(75%) saturate(4182%) hue-rotate(349deg) brightness(90%) contrast(124%);
+margin: 5px;
+
+}
+
+#deletetrash {
+top: 0px;
+right: 0px;
+position: absolute;
+
+}
+
+.date {
+top: 0px;
+left: 0px;
+position: absolute;
+padding-left: 3%;
+padding-top: 3%;
+}
+
+div#frame div.note {
+	-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out; 
+	-webkit-transition: all .2s ease-in-out; 
+	cursor: pointer;
+	display: block;
+}
+
+div#frame div:hover.note {
+	border: 1px solid rgba(0,0,0,.75);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.note {
+	width: 40vh;
+	min-height: 20vh;
+	height: auto;
+	box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	float: left;
+	margin: 8px;
+	border: 1px solid rgba(0,0,0,.25);
+overflow: hidden;
+}
+
+.sticky0 {
+	transform: rotate(-3.5deg);
+	-webkit-transform: rotate(-3.5deg);
+	-moz-transform: rotate(-3.5deg);
+	background-color: white;
+}
+
+.sticky1 {
+	transform: rotate(-3.5deg);
+	-webkit-transform: rotate(-3.5deg);
+	-moz-transform: rotate(-3.5deg);
+	background-color: #CBFAFA;
+}
+
+.sticky2 {
+	transform: rotate(1deg);
+	-webkit-transform: rotate(1deg);
+	-moz-transform: rotate(1deg);
+	background-color: #FFF780;
+}
+
+.sticky3 {
+	transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	background-color: #F8CDCD;
+}
+
+.sticky4 {
+	transform: rotate(-2deg);
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	background-color: #F8CDCD;
+}
+
+.sticky5 {
+	transform: rotate(-2deg);
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+	background-color: #ffffff;
+}
+
+.pin {
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.55);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.55);
+	box-shadow: 0 3px 6px rgba(0,0,0,.55);
+	margin: 0 auto;
+	margin-top: 2px;
+}
+
+div#frame div:nth-child(1n) .pin {
+	background-image: -moz-radial-gradient(35px 35px 35deg, circle cover, red 50%, black 100%);
+	background-image: -webkit-radial-gradient(35px 35px, circle cover, red, black);
+	background-image: radial-gradient(red 50%, black 100%);
+
+}
+
+div#frame div:nth-child(6n) .pin {
+	background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, orange 50%, black 100%);
+	background-image: -webkit-radial-gradient(45px 45px, circle cover, yellow, orange);
+	background-image: radial-gradient(orange 50%, black 100%);
+}
+
+div#frame div:nth-child(3n) .pin {
+	background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, yellow 50%, black 100%);
+	background-image: -webkit-radial-gradient(45px 45px, circle cover, yellow, black);
+	background-image: radial-gradient(yellow 50%, black 100%);
+}
+
+div#frame div:nth-child(5n+3) .pin,
+div#frame div:last-child .pin {
+	background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, blue 50%, white 100%);
+	background-image: -webkit-radial-gradient(45px 45px, circle cover, blue, white);
+	background-image: radial-gradient(blue 50%, white 100%);
+}
+
+.text {
+padding-top: 5%;
+height: 90%;
+overflow-wrap: break-word;
+	margin: 10px;
+	
+}
+
+
+/* Float cancel and delete buttons and add an equal width */
+.cancelbtn, .deletebtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add a color to the cancel button */
+.cancelbtn {
+  background-color: #ccc;
+  color: black;
+}
+
+/* Add a color to the delete button */
+.deletebtn {
+  background-color: #f44336;
+}
+
+/* Add padding and center-align text to the container */
+.container {
+  padding: 16px;
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: white!important;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: white;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid black;
+  width: 100px; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid black;
+  margin-bottom: 25px;
+}
+ 
+/* The Modal Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and delete button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .deletebtn {
+     width: 100%;
+  }
+}
+/*
+.form-group{
+    border: 2px solid black; 
+    margin: auto;
+    padding: 0px; 
+    
+}
+.imgadder{
+    border: 2px solid white; 
+    color: white;
+    font-family: monospace;
+    height: 350px;
+    width: 400px;
+    margin: 300px;
+    margin-top: 0px;
+    padding: 0px;
+    justify-content: center;
+}
+
+.uploadb{
+width: 50%;
+}
+
+.deletebtn {
+  background-color: #ccc;
+    font-family: monospace;
+}
+
+div.navbar img {
+    width: 50%;
+    height: 2vh;
+    margin-right: 50px;
+display: block;
+}
+
+
+div.navbar {
+
+    justify-content: center;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+flex-wrap: nowrap;
+max-height: 20vh;
+    background: dimgrey;
+}
+
+

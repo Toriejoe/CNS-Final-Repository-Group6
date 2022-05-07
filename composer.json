@@ -1,0 +1,7 @@
+{
+    "require": {
+        "divineomega/password_exposed": "^3.2",
+        "square1/pwned-check": "^1.1",
+        "aws/aws-sdk-php": "^3.33"
+    }
+}
